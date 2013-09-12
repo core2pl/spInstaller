@@ -12,11 +12,9 @@ ini_set('display_errors', true);
 
 require 'autoloader.php';
 
-try {
+if (file_exists('engine/core.class.php')) {
     $core = new engine\core();
     $core->showSite();
-} catch (Exception $e) {
+} else {
     require_once 'install.php';
 }
-
-
