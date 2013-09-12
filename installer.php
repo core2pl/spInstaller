@@ -18,5 +18,4 @@ exec('cd ckeditor/ && git checkout stable/full && cd ../');
 exec('git clone http://github.com/core2pl/theme_default.git themes/default/');
 //exec('git cd theme/ && git checkout master && cd ../'); TODO checkout to branch master
 
-var_dump($_SERVER['PHP_SELF']);
 header('Location: /install/welcome');
