@@ -16,5 +16,5 @@ if (file_exists('./engine/core.class.php')) {
     $core = new engine\core();
     $core->showSite();
 } else {
-    require_once 'install.php';
+    require_once 'installer.php';
 }
